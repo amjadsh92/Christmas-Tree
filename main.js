@@ -28,6 +28,7 @@ function line (n){
     for (let i = 0; i < n; i++){
         
         var linespan = document.createElement("span");
+        linespan.setAttribute("class", "line")
         var textnode = document.createTextNode('|')
         linespan.appendChild(textnode)
         wrapper.appendChild(linespan);
@@ -83,12 +84,12 @@ for (let i = 0; i < n; i++){
 
       
        spanstarleft = document.createElement("span");
-       spanstar.setAttribute("class", "star")
+       spanstarleft.setAttribute("class", "star")
        const textnode2 = document.createTextNode("*");
        spanstarleft.appendChild(textnode2);
 
        spanstarright = document.createElement("span");
-       spanstar.setAttribute("class", "star")
+       spanstarright.setAttribute("class", "star")
        const textnode3 = document.createTextNode("*");
        spanstarright.appendChild(textnode3);
        

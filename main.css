@@ -2,6 +2,7 @@ span{
 
     display: inline-block;
     width: 20px;
+    
 }
 
 .wrapper{
@@ -18,3 +19,10 @@ span{
     
 }
 
+.star{
+    color:red
+}
+
+.line{
+    color:green
+}
