@@ -41,6 +41,8 @@ function line (n){
 }
 
 body = document.getElementById("body");
+maindiv = document.createElement("div")
+maindiv.setAttribute("class", "tree")
 
 for (let i = 0; i < n; i++){
     //empty =" ".repeat((length - (2 * i + 1)) / 2)
@@ -49,6 +51,7 @@ for (let i = 0; i < n; i++){
        
        
        div = document.createElement("div");
+       
        
 
 
@@ -61,7 +64,8 @@ for (let i = 0; i < n; i++){
        div.appendChild(space((length - (2 * i + 1)) / 2))
        div.appendChild(spanstar)
        div.appendChild(space((length - (2 * i + 1)) / 2))
-       body.appendChild(div)
+       maindiv.appendChild(div)
+       body.appendChild(maindiv)
 
 
        //console.log(empty + star + empty)
@@ -93,7 +97,9 @@ for (let i = 0; i < n; i++){
        div.appendChild(line(1 + 2 * (i - 1)))
        div.appendChild(spanstarright)
        div.appendChild(space((length - (2 * i + 1)) / 2))
-       body.appendChild(div)
+       maindiv.appendChild(div)
+       body.appendChild(maindiv)
+       
         //console.log(empty + star + line + star + empty)
     }
 
